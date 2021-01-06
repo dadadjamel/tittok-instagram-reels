@@ -1,4 +1,34 @@
-.App {
+*{
+  margin: 0px;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+.app{
+  height: 100vh;
+  background-color: black;
+  display: grid;
+  place-items: center;
+}
+
+.app__video{
+  position: relative;
+  height: 100vh;
+  overflow: scroll;
+  border-radius: 25px;
+  width: 80%;
+  max-width: 500px;
+  scroll-snap-type: y mandatory;
+}
+
+.app__video::-webkit-scrollbar{
+  display: none;
+}
+
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +65,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
